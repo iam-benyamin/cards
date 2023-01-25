@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:wght@400;700&display=swap');
+
 :root {
   --cream-color: #fdc448;
   --cyan-color: #00cba0;
@@ -13,6 +15,7 @@
 
 html,
 body {  
+  font-family: 'Ubuntu Mono', monospace;
   overflow-x: hidden;
 }
 
