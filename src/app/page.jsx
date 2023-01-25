@@ -12,11 +12,23 @@ export default function Home() {
       <div className='container' >
         <div className={styles.cards}>
           <div className={styles.folder__right}>
-            <div className={styles.image}>
+            <div className={styles.big__image}>
               <Image
                 src={humanBigPictuer}
                 alt='human head pic'
               />
+            </div>
+            <div className={styles.text}>
+              <p>In literary theory, a text is any object </p>
+            </div>
+            <div className={styles.round__button}>
+              Get Expert Advice <span>&rarr;</span>
+            </div>
+            <div className={styles.tiny__buttons}>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
           <div className={styles.folder__left}>
@@ -24,7 +36,7 @@ export default function Home() {
               <div className={styles.header__paragraph} >
                 <p>the<br /><strong>futur</strong></p>
               </div>
-              <div className={styles.image}>
+              <div className={styles.small__image}>
                 <Image
                   src={humanSmallPictuer}
                   alt='human head pic'

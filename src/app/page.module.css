@@ -36,6 +36,7 @@
   align-items: center;
   width: 80%;
 }
+
 .cards .folder__left .content .header__paragraph {
   font-size: 38px
 }
@@ -50,9 +51,10 @@
   height: 500px;
   position: relative;
   border-radius: 15px 0 15px 15px;
+  color: var(--black-color);
 }
 
-.folder__right::after {
+.cards .folder__right::after {
   content: " ";
   position: absolute;
   top: -20px;
@@ -63,11 +65,78 @@
   border-radius: 27px 15px 0 0;
 }
 
-.folder__right .content .image {
+.cards .folder__right .text {
+  width: 20%;
+  font-weight: 600;
   position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 20px;
+  left: 20px;
+}
+
+.cards .folder__right .round__button {
+  background-color: transparent;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  padding: 15px;
+  padding-right: 55px;
+  border: 1px solid var(--black-color);
+  border-radius: 28px;
+}
+
+.cards .folder__right .round__button span {
+  height: 35px;
+  width: 35px;
+  background-color: var(--black-color);
+  display: inline-block;
+  border-radius: 21px;
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  color: white;
+  font-size: 27px;
+  padding-left: 8px;
+}
+
+.cards .folder__right .tiny__buttons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.cards .folder__right .tiny__buttons  span {
+  background-color: var(--black-color);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+.cards .folder__right .tiny__buttons  span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.cards .folder__right .tiny__buttons  span:nth-child(2) {
+  top: 9px;
+  left: 9px;
+}
+.cards .folder__right .tiny__buttons  span:nth-child(3) {
+  top: 9px;
+  left: -9px;
+}
+.cards .folder__right .tiny__buttons  span:nth-child(4) {
+  top: 18px;
+  left: 0px;
+}
+
+.cards .folder__right .big__image {
+  position: absolute;
+  width: 100%;
+  bottom: -26px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 996px) {
@@ -76,17 +145,17 @@
     gap: 40px;
   }
 
-  .folder__left {
+  .cards .folder__left {
     width: 48%;
   }
 
-  .folder__right {
+  .cards .folder__right {
     width: 95%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .folder__left {
+  .cards .folder__left {
     width: 95%;
   }
 }
